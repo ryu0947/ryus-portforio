@@ -1,0 +1,14 @@
+$mdWidth: 720px;
+$lgWidth: 960px;
+$xlWidth: 1200px;
+
+@mixin container($width) {
+  @if $width > 767px {
+    max-width: $width;
+    margin: 0 auto;
+    text-align: center;
+  } @else {
+    padding: 0 15px;
+    text-align: center;
+  }
+}
