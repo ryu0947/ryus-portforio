@@ -16,5 +16,10 @@ body {
 
 .header {
     background: $colorBlue;
+    height: 80px;
 }
 
+.nav {
+    color: #ffffff;
+    @include flexBox();
+} 

@@ -47,4 +47,12 @@ body {
 
 .header {
   background: #3B4675;
+  height: 80px;
+}
+
+.nav {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
