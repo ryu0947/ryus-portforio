@@ -76,7 +76,7 @@ body {
   z-index: 10;
 }
 
-.header__container {
+.header__wrapper {
   position: fixed;
   top: 0;
   left: 0;
