@@ -9,3 +9,12 @@ body {
     color: #333333;
     letter-spacing: 0.1em;
 }
+
+.container {
+    @include container();
+}
+
+.header {
+    background: $colorBlue;
+}
+

@@ -39,3 +39,12 @@ body {
   color: #333333;
   letter-spacing: 0.1em;
 }
+
+.container {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.header {
+  background: #3B4675;
+}
