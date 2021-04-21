@@ -5,35 +5,36 @@
 @import "mixin";
 
 body {
-    font-size: 16px;
-    color: #333333;
-    letter-spacing: 0.1em;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0.1em;
 }
 
 .container {
-    @include container();
+  @include container();
 }
 
 .header {
-    position: relative;
-    background: $colorBlue;
-    height: 60px;
-    line-height: 60px;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  z-index: 10;
 }
 
 .header__container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $colorBlue;
 }
 
 .nav {
-    color: #ffffff;
-    @include flexBox();
-    padding: 0 5vw;
-} 
+  color: #ffffff;
+  @include flexBox();
+  padding: 0 5vw;
+}
 
 .nav__item {
-    font-weight: bold;
+  font-weight: bold;
 }
