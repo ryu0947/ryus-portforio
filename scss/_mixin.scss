@@ -1,14 +1,10 @@
 $flexWrap: true;
 
-@mixin flexBox {
+@mixin flexBox($flexWrap: false) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   @if $flexWrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-  } @else {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
