@@ -15,11 +15,25 @@ body {
 }
 
 .header {
+    position: relative;
     background: $colorBlue;
-    height: 80px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.header__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .nav {
     color: #ffffff;
     @include flexBox();
+    padding: 0 5vw;
 } 
+
+.nav__item {
+    font-weight: bold;
+}

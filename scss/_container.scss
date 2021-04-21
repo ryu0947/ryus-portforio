@@ -1,17 +1,16 @@
-$width: 0;
 $mdWidth: 720px;
 $lgWidth: 960px;
 $xlWidth: 1200px;
 
-@mixin container($width: 0) {
+@mixin container($width: sp) {
   text-align: center;
-  @if $width > 767px {
+  @if $width == md {
     max-width: $mdWidth;
     margin: 0 auto;
-  } @else if $width > 959px {
+  } @else if $width == lg {
     max-width: $lgWidth;
     margin: 0 auto;
-  } @else if $width > 1199px {
+  } @else if $width == xl {
     max-width: $xlWidth;
     margin: 0 auto;
   } @else {
