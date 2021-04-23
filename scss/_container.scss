@@ -1,19 +1,38 @@
-$mdWidth: 720px;
-$lgWidth: 960px;
-$xlWidth: 1200px;
+@import "breakpoints";
 
-@mixin container($width: sp) {
+// @mixin container($width: sp) {
+//   text-align: center;
+//   @if $width == md {
+//     max-width: $mdWidth;
+//     margin: 0 auto;
+//   } @else if $width == lg {
+//     max-width: $lgWidth;
+//     margin: 0 auto;
+//   } @else if $width == xl {
+//     max-width: $xlWidth;
+//     margin: 0 auto;
+//   } @else {
+//     padding: 0 15px;
+//   }
+// }
+
+@mixin container {
+
+  padding: 0 15px;
   text-align: center;
-  @if $width == md {
-    max-width: $mdWidth;
+
+  @include breakPoint($md) {
+    max-width: $md;
+    padding: 0;
     margin: 0 auto;
-  } @else if $width == lg {
-    max-width: $lgWidth;
-    margin: 0 auto;
-  } @else if $width == xl {
-    max-width: $xlWidth;
-    margin: 0 auto;
-  } @else {
-    padding: 0 15px;
   }
+
+  @include breakPoint($lg) {
+    max-width: $lg;
+  }
+
+  @include breakPoint($xl) {
+    max-width: $xl;
+  }
+
 }

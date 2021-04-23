@@ -11,27 +11,11 @@ body {
 }
 
 .container {
-  // スマホ
   @include container();
-
-  // タブレット
-  @include breakPoint($md) {
-    @include container(md);
-  }
-
-  // タブレット大・ノートPC
-  @include breakPoint($lg) {
-    @include container(lg);
-  }
-
-  // PC・モニター
-  @include breakPoint($xl) {
-    @include container(xl);
-  }
 }
 
 .section-title {
-    @include sectionTitle();
+  @include sectionTitle();
 }
 
 .header {
