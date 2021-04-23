@@ -30,6 +30,10 @@ body {
   }
 }
 
+.section-title {
+    @include sectionTitle();
+}
+
 .header {
   position: relative;
   height: 60px;

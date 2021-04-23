@@ -69,6 +69,23 @@ body {
   }
 }
 
+.section-title {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 60px;
+  }
+}
+
 .header {
   position: relative;
   height: 60px;
