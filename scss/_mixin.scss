@@ -1,3 +1,4 @@
+// 共通で使うflexboxのスタイル
 $flexWrap: true;
 
 @mixin flexBox($flexWrap: false) {
@@ -8,3 +9,5 @@ $flexWrap: true;
     flex-wrap: wrap;
   }
 }
+
+// セクションのタイトルのスタイル
