@@ -1,3 +1,5 @@
+@import "breakpoints";
+
 // 共通で使うflexboxのスタイル
 $flexWrap: true;
 
@@ -11,3 +13,19 @@ $flexWrap: true;
 }
 
 // セクションのタイトルのスタイル
+@mixin sectionTitle {
+  font-weight: bold;
+
+   // スマホ
+  font-size: 32px;
+
+  // タブレット
+  @include breakPoint($md) {
+    font-size: 48px;
+  }
+
+  // タブレット大・ノートPC
+  @include breakPoint($lg) {
+    font-size: 60px;
+  }
+}
