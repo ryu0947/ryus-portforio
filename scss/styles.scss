@@ -21,7 +21,6 @@ body {
 .header {
   height: 60px;
   line-height: 60px;
-  z-index: 10;
 }
 
 .header__wrapper {
@@ -30,12 +29,21 @@ body {
   left: 0;
   width: 100%;
   background: $colorBlue;
+  z-index: 10;
 }
 
 .nav {
+  padding: 0 5vw;
+  @include breakPoint($md) {
+    width: 600px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.nav__list {
   color: #ffffff;
   @include flexBox();
-  padding: 0 5vw;
 }
 
 .nav__item {
