@@ -2,6 +2,7 @@
 @import "variable";
 @import "breakpoints";
 @import "container";
+@import "icon-color";
 @import "mixin";
 
 body {
@@ -131,6 +132,22 @@ section {
   vertical-align: middle;
 }
 
-.fa-twitter {
-  color: #00acee;
+.skill {
+  background-color: $colorOffWhite;
+}
+
+.skill__list {
+  @include breakPoint($md) {
+    @include flexBox($flexWrap);
+  }
+  margin-top: 60px;
+}
+
+.skill__item {
+  width: 25%;
+  margin-bottom: 50px;
+}
+
+.skill__item:nth-child(n + 5) {
+  margin-bottom: 0;
 }
