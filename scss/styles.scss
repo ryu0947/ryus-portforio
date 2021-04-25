@@ -60,17 +60,30 @@ section {
   font-weight: bold;
 }
 
+.profile {
+  @include breakPoint($lg) {
+    @include flexBox();
+  }
+}
+
 .profile__img {
   width: 80%;
   @include breakPoint($md) {
-    width: 50%;
+    width: 40%;
+  }
+  @include breakPoint($lg) {
+    width: 35%;
   }
 }
 
 .profile__list {
   text-align: justify;
-  width: 78%;
+  width: 75%;
   margin: 50px auto;
+  @include breakPoint($lg) {
+    width: 55%;
+    margin: 0;
+  }
 }
 
 .profile__item {
@@ -81,10 +94,14 @@ section {
 }
 
 .blog-link {
-    color: $colorYellow;
-    text-decoration: underline;
+  color: $colorYellow;
+  text-decoration: underline;
 }
 
-.icon-img {
+.fab {
   vertical-align: middle;
+}
+
+.fa-twitter {
+  color: #00acee;
 }
