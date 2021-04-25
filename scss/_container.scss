@@ -1,36 +1,23 @@
 @import "breakpoints";
 
-// @mixin container($width: sp) {
-//   text-align: center;
-//   @if $width == md {
-//     max-width: $mdWidth;
-//     margin: 0 auto;
-//   } @else if $width == lg {
-//     max-width: $lgWidth;
-//     margin: 0 auto;
-//   } @else if $width == xl {
-//     max-width: $xlWidth;
-//     margin: 0 auto;
-//   } @else {
-//     padding: 0 15px;
-//   }
-// }
-
 @mixin container {
 
   padding: 0 15px;
   text-align: center;
 
+  // タブレット
   @include breakPoint($md) {
     max-width: $md;
     padding: 0;
     margin: 0 auto;
   }
 
+  // タブレット大・ノートPC
   @include breakPoint($lg) {
     max-width: $lg;
   }
 
+  // モニター
   @include breakPoint($xl) {
     max-width: $xl;
   }
