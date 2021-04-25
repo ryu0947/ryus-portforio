@@ -13,7 +13,7 @@ body {
 }
 
 section {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
 .container {
@@ -58,4 +58,26 @@ section {
 
 .nav__item {
   font-weight: bold;
+}
+
+.profile__img {
+  width: 80%;
+}
+
+.profile__list {
+  text-align: justify;
+  padding: 0 20px;
+  margin: 50px 0;
+}
+
+.profile__item {
+  list-style: disc;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.icon-img {
+  width: 52px;
+  height: 52px;
 }

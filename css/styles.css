@@ -72,19 +72,7 @@ section {
 
 .section-title {
   font-weight: bold;
-  font-size: 24px;
-}
-
-@media (min-width: 768px) {
-  .section-title {
-    font-size: 32px;
-  }
-}
-
-@media (min-width: 992px) {
-  .section-title {
-    font-size: 48px;
-  }
+  font-size: 48px;
 }
 
 .sub-title {
@@ -129,4 +117,26 @@ section {
 
 .nav__item {
   font-weight: bold;
+}
+
+.profile__img {
+  width: 80%;
+}
+
+.profile__list {
+  text-align: justify;
+  padding: 0 20px;
+  margin: 50px 0;
+}
+
+.profile__item {
+  list-style: disc;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.icon-img {
+  width: 52px;
+  height: 52px;
 }
