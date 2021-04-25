@@ -169,6 +169,11 @@ section {
   text-decoration: underline;
 }
 
+.blog-link:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
 .fab {
   vertical-align: middle;
 }
