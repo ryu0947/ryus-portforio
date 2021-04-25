@@ -71,15 +71,16 @@ section {
 }
 
 .section-title {
-  font-weight: bold;
   font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 1em;
 }
 
 .sub-title {
   display: block;
+  font-size: 16px;
   font-weight: bold;
   color: #FFCD44;
-  font-size: 16px;
 }
 
 .header {
@@ -123,10 +124,16 @@ section {
   width: 80%;
 }
 
+@media (min-width: 768px) {
+  .profile__img {
+    width: 50%;
+  }
+}
+
 .profile__list {
   text-align: justify;
-  padding: 0 20px;
-  margin: 50px 0;
+  width: 78%;
+  margin: 50px auto;
 }
 
 .profile__item {
@@ -136,7 +143,11 @@ section {
   margin-bottom: 1em;
 }
 
+.blog-link {
+  color: #FFCD44;
+  text-decoration: underline;
+}
+
 .icon-img {
-  width: 52px;
-  height: 52px;
+  vertical-align: middle;
 }
