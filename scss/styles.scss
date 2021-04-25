@@ -137,17 +137,24 @@ section {
 }
 
 .skill__list {
-  @include breakPoint($md) {
-    @include flexBox($flexWrap);
-  }
+  @include flexBox($flexWrap);
   margin-top: 60px;
 }
 
 .skill__item {
-  width: 25%;
+  width: 50%;
+  @include breakPoint($md) {
+    width: 25%;
+  }
   margin-bottom: 50px;
 }
 
 .skill__item:nth-child(n + 5) {
-  margin-bottom: 0;
+  @include breakPoint($md) {
+    margin-bottom: 0;
+  }
 }
+
+.skill__item:nth-child(n + 6) {
+    margin-bottom: 0;
+  }

@@ -227,23 +227,30 @@ section {
 }
 
 .skill__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 60px;
 }
 
-@media (min-width: 768px) {
-  .skill__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
-
 .skill__item {
-  width: 25%;
+  width: 50%;
   margin-bottom: 50px;
 }
 
-.skill__item:nth-child(n + 5) {
+@media (min-width: 768px) {
+  .skill__item {
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .skill__item:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
+}
+
+.skill__item:nth-child(n + 6) {
   margin-bottom: 0;
 }
