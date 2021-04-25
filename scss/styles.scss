@@ -156,5 +156,15 @@ section {
 }
 
 .skill__item:nth-child(n + 6) {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.work__list {
+  @include breakPoint($lg) {
+    @include flexBox($flexWrap);
   }
+}
+
+.work__item {
+  width: 30%;
+}

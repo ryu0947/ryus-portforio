@@ -30,6 +30,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   border: none;
   vertical-align: bottom;
 }
@@ -253,4 +254,17 @@ section {
 
 .skill__item:nth-child(n + 6) {
   margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .work__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.work__item {
+  width: 30%;
 }
