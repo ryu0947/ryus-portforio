@@ -422,7 +422,31 @@ section {
 }
 
 .work-contents {
-  width: 80%;
-  margin: 0 auto;
   text-align: justify;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .work-contents {
+    width: 80%;
+    margin: 0 auto 60px;
+  }
+}
+
+.work-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  position: relative;
+}
+
+.work-title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 22%;
+  left: 0;
+  width: 5px;
+  height: 55%;
+  background: #053a7a;
 }

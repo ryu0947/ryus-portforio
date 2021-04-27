@@ -168,10 +168,10 @@ section {
 
 .skill__item {
   width: 50%;
+  margin-bottom: 50px;
   @include breakPoint($md) {
     width: 25%;
   }
-  margin-bottom: 50px;
 }
 
 .skill__item:nth-child(n + 5) {
@@ -192,14 +192,14 @@ section {
 }
 
 .work__item {
+  width: 100%;
+  margin-bottom: 60px;
   @include breakPoint($lg) {
     width: 45%;
   }
   @include breakPoint($xl) {
     width: 30%;
   }
-  width: 100%;
-  margin-bottom: 60px;
 }
 
 .work__item img {
@@ -227,6 +227,8 @@ section {
 }
 
 .description {
+  margin: 2em 0;
+  text-align: justify;
   @include breakPoint($md) {
     width: 80%;
     margin: 2em auto 0;
@@ -234,8 +236,6 @@ section {
   @include breakPoint($xl) {
     width: 60%;
   }
-  margin: 2em 0;
-  text-align: justify;
 }
 
 .btn {
@@ -287,7 +287,28 @@ section {
 }
 
 .work-contents {
-  width: 80%;
-  margin: 0 auto;
   text-align: justify;
+  margin-bottom: 40px;
+  @include breakPoint($md) {
+    width: 80%;
+    margin: 0 auto 60px;
+  }
+}
+
+.work-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  position: relative;
+}
+
+.work-title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 5px;
+    height: 55%;
+    background: $colorBlue;
 }
