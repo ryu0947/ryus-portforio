@@ -120,7 +120,7 @@ section {
 }
 
 .blog-link {
-  color: $colorYellow;
+  color: $colorRed;
   text-decoration: underline;
 }
 
@@ -213,4 +213,20 @@ section {
   }
   margin: 2em 0;
   text-align: justify;
+}
+
+.btn {
+  @include btn();
+}
+
+.red {
+  background: $colorRed;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.fa-external-link-alt {
+  margin-left: 0.3em;
 }

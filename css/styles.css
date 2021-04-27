@@ -332,3 +332,24 @@ section {
     width: 60%;
   }
 }
+
+.btn {
+  display: inline-block;
+  margin-top: 2.5em;
+  padding: 15px 70px;
+  border-radius: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.red {
+  background: #da2c3f;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.fa-external-link-alt {
+  margin-left: 0.3em;
+}
