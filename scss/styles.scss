@@ -271,3 +271,23 @@ section {
     width: 85%;
   }
 }
+
+.work-caption {
+  margin: 1.5em 0;
+}
+
+.work-link {
+  color: $colorRed;
+  text-decoration: underline;
+}
+
+.work-language {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.work-contents {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}

@@ -56,6 +56,10 @@ img {
   color: #ffffff;
 }
 
+.work-link .fa-external-link-alt {
+  color: #da2c3f;
+}
+
 .links .fa-github {
   color: #ffffff;
 }
@@ -401,4 +405,24 @@ section {
   .work-movie {
     width: 85%;
   }
+}
+
+.work-caption {
+  margin: 1.5em 0;
+}
+
+.work-link {
+  color: #da2c3f;
+  text-decoration: underline;
+}
+
+.work-language {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.work-contents {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
 }
