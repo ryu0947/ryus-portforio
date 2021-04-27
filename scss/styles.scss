@@ -83,30 +83,30 @@ section {
 
 .nav__item {
   font-weight: bold;
-}
 
-.nav__item a {
-  position: relative;
-  color: #ffffff;
-  font-weight: bold;
-}
+  & a {
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
 
-.nav__item a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 100%;
-  height: 3px;
-  background: #ffffff;
-  transform: scale(0, 1);
-  transform-origin: center top;
-  transition: transform 0.3s;
-}
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 3px;
+      background: #ffffff;
+      transform: scale(0, 1);
+      transform-origin: center top;
+      transition: transform 0.3s;
+    }
 
-.nav__item a:hover::after {
-  content: "";
-  transform: scale(1, 1);
+    &:hover::after {
+      content: "";
+      transform: scale(1, 1);
+    }
+  }
 }
 
 .profile {
