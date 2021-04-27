@@ -8,20 +8,26 @@
       content="これまでに制作した作品の詳細ページです。"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <title>作品詳細 | Numbers Game</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
-        <nav>
-          <ul class="nav">
-            <li class="nav__item">About</li>
-            <li class="nav__item">Skill</li>
-            <li class="nav__item">Work</li>
-            <li class="nav__item">Blog</li>
-          </ul>
-        </nav>
-      </div>
+    <header id="js-header" class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about">About</a></li>
+          <li class="nav__item"><a href="#skill">Skill</a></li>
+          <li class="nav__item"><a href="#work">Work</a></li>
+          <li class="nav__item"><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
     </header>
     <section>
       <div class="container">
@@ -79,10 +85,20 @@
     </section>
     <footer class="footer">
       <div class="links">
-        <img src="img/twitter.png" alt="Twitterへのリンク" /><img
-          src="img/gitHub-icon.png"
-          alt="GitHubへのリンク"
-        />
+        <a
+          href="https://twitter.com/ryu0947"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-2x fa-twitter"></i>
+        </a>
+        <a
+          href="https://github.com/ryu0947"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-2x fa-github"></i>
+        </a>
       </div>
       <small class="small">&copy;Ryu's Portfolio</small>
     </footer>
