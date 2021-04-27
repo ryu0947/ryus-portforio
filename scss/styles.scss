@@ -9,7 +9,8 @@ body {
   font-size: 16px;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
-  color: #333333;
+  color: #231815;
+  line-height: 2;
   letter-spacing: 0.1em;
 }
 
@@ -132,7 +133,8 @@ section {
   vertical-align: middle;
 }
 
-.skill {
+.skill,
+.blog {
   background-color: $colorOffWhite;
 }
 
@@ -190,4 +192,25 @@ section {
   font-size: 18px;
   margin-top: 0.5em;
   font-weight: bold;
+}
+
+.blog-img {
+  @include breakPoint($md) {
+    width: 90%;
+  }
+  @include breakPoint($xl) {
+    width: 70%;
+  }
+}
+
+.description {
+  @include breakPoint($md) {
+    width: 80%;
+    margin: 2em auto 0;
+  }
+  @include breakPoint($xl) {
+    width: 60%;
+  }
+  margin: 2em 0;
+  text-align: justify;
 }
