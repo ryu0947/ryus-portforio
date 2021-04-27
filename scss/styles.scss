@@ -30,17 +30,40 @@ section {
   @include subTitle();
 }
 
+.fv {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/main-visual.jpg) no-repeat center/cover;
+}
+
+.fv::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.fv__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .header {
+  background: $colorBlue;
+  width: 100%;
   height: 60px;
   line-height: 60px;
 }
 
-.header__wrapper {
+.header.fixed {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: $colorBlue;
   z-index: 10;
 }
 
@@ -238,5 +261,5 @@ section {
 }
 
 .small {
-    color: #ffffff;
+  color: #ffffff;
 }
