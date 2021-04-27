@@ -14,25 +14,22 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
-    <script src="js/header.js" defer></script>
     <title>Ryu's Portfolio</title>
   </head>
   <body>
-    <div class="fv">
-      <h1 class="fv__logo"><img src="img/logo.png" alt="Ryu's Portfolio"></h1>
-    </div>
     <header class="header">
-      <div class="header__wrapper">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#about">About</a></li>
-            <li class="nav__item"><a href="#skill">Skill</a></li>
-            <li class="nav__item"><a href="#work">Work</a></li>
-            <li class="nav__item"><a href="#blog">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about">About</a></li>
+          <li class="nav__item"><a href="#skill">Skill</a></li>
+          <li class="nav__item"><a href="#work">Work</a></li>
+          <li class="nav__item"><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
     </header>
+    <div class="fv">
+      <h1 class="fv__logo"><img src="img/logo.png" alt="Ryu's Portfolio" /></h1>
+    </div>
     <main>
       <section id="about" class="about">
         <div class="container">
@@ -161,7 +158,11 @@
           <h2 class="section-title">
             Blog<span class="sub-title">ブログ</span>
           </h2>
-            <img class="blog-img" src="img/blog.png" alt="ブログのスクリーンショット" />
+          <img
+            class="blog-img"
+            src="img/blog.png"
+            alt="ブログのスクリーンショット"
+          />
           <p class="description">
             日々の学習で<strong>エラーが出て解決したことや知識のアウトプット</strong>を目的としてブログを書いています。
             記事を書く時はエディタを使ってコードを書いて載せたり、CodePenを使ってコードとデモを載せたり
