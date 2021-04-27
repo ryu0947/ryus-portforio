@@ -224,9 +224,19 @@ section {
 }
 
 .btn:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .fa-external-link-alt {
   margin-left: 0.3em;
+}
+
+.footer {
+  background: $colorBlue;
+  padding: 30px 0 0;
+  text-align: center;
+}
+
+.small {
+    color: #ffffff;
 }
