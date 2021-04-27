@@ -263,3 +263,11 @@ section {
 .small {
   color: #ffffff;
 }
+
+.work-movie {
+  width: 100%;
+  height: auto;
+  @include breakPoint($md) {
+    width: 85%;
+  }
+}
