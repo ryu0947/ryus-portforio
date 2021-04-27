@@ -163,8 +163,31 @@ section {
   @include breakPoint($lg) {
     @include flexBox($flexWrap);
   }
+  margin-top: 60px;
 }
 
 .work__item {
-  width: 30%;
+  @include breakPoint($lg) {
+    width: 45%;
+  }
+  @include breakPoint($xl) {
+    width: 30%;
+  }
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.work__item img {
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.work__item img:hover {
+  transform: translateY(-4px);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.work__name {
+  font-size: 18px;
+  margin-top: 0.5em;
+  font-weight: bold;
 }
