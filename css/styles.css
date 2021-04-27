@@ -411,9 +411,14 @@ section {
   margin: 1.5em 0;
 }
 
-.work-link {
+.work-link a {
   color: #da2c3f;
   text-decoration: underline;
+}
+
+.work-link:hover {
+  opacity: 0.6;
+  text-decoration: none;
 }
 
 .work-language {

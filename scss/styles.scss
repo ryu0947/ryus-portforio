@@ -276,9 +276,14 @@ section {
   margin: 1.5em 0;
 }
 
-.work-link {
+.work-link a {
   color: $colorRed;
   text-decoration: underline;
+}
+
+.work-link:hover {
+  opacity: 0.6;
+  text-decoration: none;
 }
 
 .work-language {
@@ -303,12 +308,12 @@ section {
 }
 
 .work-title::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 22%;
-    left: 0;
-    width: 5px;
-    height: 55%;
-    background: $colorBlue;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 22%;
+  left: 0;
+  width: 5px;
+  height: 55%;
+  background: $colorBlue;
 }
