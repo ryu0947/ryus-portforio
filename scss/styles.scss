@@ -126,20 +126,55 @@ section {
 }
 
 .profile__list {
+  display: flex;
+  flex-wrap: wrap;
   text-align: justify;
-  width: 75%;
-  margin: 50px auto;
+  margin: 50px 0;
+  @include breakPoint($md) {
+    width: 90%;
+    margin: 50px auto;
+  }
   @include breakPoint($lg) {
-    width: 55%;
-    margin: 0;
+    width: 60%;
+  }
+  @include breakPoint($xl) {
+    width: 50%;
+  }
+
+  & dt {
+    flex-basis: 37%;
+    @include breakPoint($md) {
+      flex-basis: 25%;
+    }
+
+    &::before {
+      content: "・";
+    }
+    &::after {
+      content: ":";
+    }
+  }
+
+  & dd {
+    flex-basis: 63%;
+    @include breakPoint($md) {
+      flex-basis: 75%;
+    }
   }
 }
 
 .profile__item {
-  list-style: disc;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 1em;
+
+  & em::before {
+    content: '"';
+  }
+  
+  & em::after {
+    content: '"';
+  }
 }
 
 .blog-link {
