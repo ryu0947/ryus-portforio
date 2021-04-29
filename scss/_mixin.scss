@@ -28,8 +28,8 @@ $flexWrap: true;
   text-align: center;
 }
 
-@mixin sunText($text) {
-  content: "($text)";
+@mixin subTitle($text) {
+  content: "";
   display: block;
   color: $colorRed;
   font-weight: bold;
