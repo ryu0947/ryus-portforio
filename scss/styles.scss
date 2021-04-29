@@ -109,6 +109,12 @@ section {
   }
 }
 
+.about {
+  & h2::before {
+    content: "自己紹介"
+  }
+}
+
 .profile {
   @include breakPoint($lg) {
     @include flexBox();
@@ -171,7 +177,7 @@ section {
   & em::before {
     content: '"';
   }
-  
+
   & em::after {
     content: '"';
   }

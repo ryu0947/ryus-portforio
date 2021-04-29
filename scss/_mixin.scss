@@ -19,14 +19,6 @@ $flexWrap: true;
   margin-bottom: 1em;
 }
 
-// サブタイトルのスタイル
-@mixin subTitle {
-  display: block;
-  font-size: 16px;
-  font-weight: bold;
-  color: $colorRed;
-}
-
 @mixin btn {
   display: inline-block;
   margin-top: 2.5em;
@@ -34,4 +26,11 @@ $flexWrap: true;
   border-radius: 40px;
   color: #ffffff;
   text-align: center;
+}
+
+@mixin sunText($text) {
+  content: "($text)";
+  display: block;
+  color: $colorRed;
+  font-weight: bold;
 }
