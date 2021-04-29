@@ -132,7 +132,7 @@ section {
   text-align: justify;
   margin: 50px 0;
   @include breakPoint($md) {
-    width: 90%;
+    width: 80%;
     margin: 50px auto;
   }
   @include breakPoint($lg) {
@@ -165,7 +165,6 @@ section {
 }
 
 .profile__item {
-  font-size: 18px;
   font-weight: 500;
   margin-bottom: 1em;
 
@@ -199,7 +198,20 @@ section {
 
 .skill__list {
   @include flexBox($flexWrap);
-  margin-top: 60px;
+  margin: 60px 0 -60px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 25%;
+    order: 1;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 25%;
+  }
 }
 
 .skill__item {
@@ -210,47 +222,52 @@ section {
   }
 }
 
-.skill__item:nth-child(n + 5) {
-  @include breakPoint($md) {
-    margin-bottom: 0;
+.work {
+  &__list {
+    @include breakPoint($lg) {
+      @include flexBox($flexWrap);
+    }
+    margin: 60px 0 -60px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30%;
+      order: 1;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 30%;
+    }
   }
-}
 
-.skill__item:nth-child(n + 6) {
-  margin-bottom: 0;
-}
+  &__item {
+    width: 100%;
+    margin-bottom: 60px;
+    @include breakPoint($lg) {
+      width: 45%;
+    }
+    @include breakPoint($xl) {
+      width: 30%;
+    }
 
-.work__list {
-  @include breakPoint($lg) {
-    @include flexBox($flexWrap);
+    & img {
+      transition: box-shadow 0.5s, transform 0.5s;
+    }
+
+    & img:hover {
+      transform: translateY(-4px);
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    }
   }
-  margin-top: 60px;
-}
 
-.work__item {
-  width: 100%;
-  margin-bottom: 60px;
-  @include breakPoint($lg) {
-    width: 45%;
+  &__name {
+    font-size: 18px;
+    margin-top: 0.5em;
+    font-weight: bold;
   }
-  @include breakPoint($xl) {
-    width: 30%;
-  }
-}
-
-.work__item img {
-  transition: box-shadow 0.5s, transform 0.5s;
-}
-
-.work__item img:hover {
-  transform: translateY(-4px);
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
-}
-
-.work__name {
-  font-size: 18px;
-  margin-top: 0.5em;
-  font-weight: bold;
 }
 
 .blog-img {
