@@ -25,9 +25,13 @@ section {
 .section-title {
   @include sectionTitle();
 
-  &.about-title::after {
-    @include subTitle("自己紹介");
-  }
+    &.about-title::after {
+      @include subTitle("自己紹介");
+    }
+
+    &.skill-title::after {
+      @include subTitle("スキル");
+    }
 }
 
 .fv {
