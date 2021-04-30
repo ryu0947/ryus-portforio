@@ -24,11 +24,11 @@ section {
 
 .section-title {
   @include sectionTitle();
-}
 
-// .sub-title {
-//   @include subTitle();
-// }
+  &.about-title::after {
+    @include subTitle("自己紹介");
+  }
+}
 
 .fv {
   position: relative;
@@ -101,12 +101,6 @@ section {
         transform: scale(1, 1);
       }
     }
-  }
-}
-
-.about {
-  & h2::before {
-    content: "自己紹介";
   }
 }
 
