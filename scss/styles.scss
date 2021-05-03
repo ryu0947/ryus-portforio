@@ -2,7 +2,6 @@
 @import "variable";
 @import "breakpoints";
 @import "container";
-@import "icon-color";
 @import "mixin";
 
 body {
@@ -76,6 +75,7 @@ section {
 
 .nav {
   padding: 0 5vw;
+
   @include breakPoint($md) {
     width: 600px;
     padding: 0;
@@ -126,6 +126,7 @@ section {
     @include breakPoint($md) {
       width: 40%;
     }
+
     @include breakPoint($lg) {
       width: 35%;
     }
@@ -136,19 +137,23 @@ section {
     flex-wrap: wrap;
     text-align: justify;
     margin: 50px 0;
+
     @include breakPoint($md) {
       width: 80%;
       margin: 50px auto;
     }
+
     @include breakPoint($lg) {
       width: 60%;
     }
+
     @include breakPoint($xl) {
       width: 50%;
     }
 
     & dt {
       flex-basis: 37%;
+
       @include breakPoint($md) {
         flex-basis: 25%;
       }
@@ -164,6 +169,7 @@ section {
 
     & dd {
       flex-basis: 63%;
+
       @include breakPoint($md) {
         flex-basis: 75%;
       }
@@ -201,14 +207,11 @@ section {
     @include breakPoint($md) {
       width: 90%;
     }
+
     @include breakPoint($xl) {
       width: 70%;
     }
   }
-}
-
-.fab {
-  vertical-align: middle;
 }
 
 .skill {
@@ -235,6 +238,7 @@ section {
   &__item {
     width: 50%;
     margin-bottom: 50px;
+
     @include breakPoint($md) {
       width: 25%;
     }
@@ -265,9 +269,11 @@ section {
   &__item {
     width: 100%;
     margin-bottom: 60px;
+
     @include breakPoint($lg) {
       width: 45%;
     }
+
     @include breakPoint($xl) {
       width: 30%;
     }
@@ -292,10 +298,12 @@ section {
 .description {
   margin: 2em 0;
   text-align: justify;
+
   @include breakPoint($md) {
     width: 80%;
     margin: 2em auto 0;
   }
+
   @include breakPoint($xl) {
     width: 60%;
   }
@@ -313,14 +321,16 @@ section {
   }
 }
 
-.fa-external-link-alt {
-  margin-left: 0.3em;
-}
-
 .footer {
   background: $colorBlue;
   padding: 30px 0 0;
   text-align: center;
+
+  &__links {
+    & .fa-github {
+      color: #ffffff;
+    }
+  }
 }
 
 .small {
@@ -379,4 +389,8 @@ section {
   width: 5px;
   height: 55%;
   background: $colorBlue;
+}
+
+.work-link .fa-external-link-alt {
+  color: $colorRed;
 }
