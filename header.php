@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/apple-touch-icon.png" />
-    <script src="<?php echo get_template_directory_uri(); ?>/js/page-link.js" defer></script>
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 </head>
