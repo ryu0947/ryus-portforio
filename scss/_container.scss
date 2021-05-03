@@ -1,7 +1,6 @@
 @import "mixin";
 
 @mixin container {
-
   padding: 0 15px;
   text-align: center;
 
@@ -21,5 +20,4 @@
   @include breakPoint($xl) {
     max-width: $xl;
   }
-
 }
