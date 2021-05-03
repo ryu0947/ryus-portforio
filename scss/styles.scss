@@ -4,26 +4,11 @@
 @import "container";
 @import "mixin";
 
-body {
-  font-size: 16px;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, sans-serif;
-  color: #231815;
-  line-height: 2;
-  letter-spacing: 0.1em;
-}
-
-section {
-  padding: 100px 0;
-}
-
 .container {
   @include container();
 }
 
 .section-title {
-  @include sectionTitle();
-
   &.about__title::after {
     @include subTitle("自己紹介");
   }
@@ -190,30 +175,6 @@ section {
   }
 }
 
-.blog {
-  background-color: $colorOffWhite;
-
-  &-link {
-    color: $colorRed;
-    text-decoration: underline;
-
-    &:hover {
-      opacity: 0.6;
-      text-decoration: none;
-    }
-  }
-
-  &-img {
-    @include breakPoint($md) {
-      width: 90%;
-    }
-
-    @include breakPoint($xl) {
-      width: 70%;
-    }
-  }
-}
-
 .skill {
   background-color: $colorOffWhite;
 
@@ -295,44 +256,40 @@ section {
   }
 }
 
-.description {
-  margin: 2em 0;
-  text-align: justify;
+.blog {
+  background-color: $colorOffWhite;
 
-  @include breakPoint($md) {
-    width: 80%;
-    margin: 2em auto 0;
-  }
+  &-link {
+    color: $colorRed;
+    text-decoration: underline;
 
-  @include breakPoint($xl) {
-    width: 60%;
-  }
-}
-
-.btn {
-  @include btn();
-
-  &.red {
-    background: $colorRed;
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-}
-
-.footer {
-  background: $colorBlue;
-  padding: 30px 0 0;
-  text-align: center;
-
-  &__links {
-    & .fa-github {
-      color: #ffffff;
+    &:hover {
+      opacity: 0.6;
+      text-decoration: none;
     }
   }
-}
 
-.small {
-  color: #ffffff;
+  &__img {
+    @include breakPoint($md) {
+      width: 90%;
+    }
+
+    @include breakPoint($xl) {
+      width: 70%;
+    }
+  }
+
+  &__description {
+    margin: 2em 0;
+    text-align: justify;
+
+    @include breakPoint($md) {
+      width: 80%;
+      margin: 2em auto 0;
+    }
+
+    @include breakPoint($xl) {
+      width: 60%;
+    }
+  }
 }
