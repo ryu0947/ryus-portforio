@@ -3,19 +3,19 @@ const { src, dest, watch } = require("gulp");
 // Sassをコンパイルするプラグイン
 const sass = require("gulp-sass");
 // @importの記述を簡潔にする
-const glob = require('gulp-sass-glob');
+const glob = require("gulp-sass-glob");
 
 // Sassをコンパイルするタスク
 const compileSass = () =>
   // scssフォルダの拡張子が.scssのファイルを取得
   src("./scss/**/*.scss")
-  // @importの記述を簡潔にする
-  .pipe(glob())
+    // @importの記述を簡潔にする
+    .pipe(glob())
     // Sassのコンパイルを実行
     .pipe(
       // コンパイル後のCSSを展開
       sass({
-        outputStyle: "expanded"
+        outputStyle: "expanded",
       })
     )
     // cssフォルダー以下に保存

@@ -1,5 +1,3 @@
-@import "breakpoints";
-
 // 共通で使うflexboxのスタイル
 $flexWrap: true;
 
@@ -10,6 +8,22 @@ $flexWrap: true;
   @if $flexWrap {
     flex-wrap: wrap;
   }
+}
+
+// セクションのタイトルのスタイル
+@mixin sectionTitle {
+  font-size: 48px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+@mixin subTitle($content) {
+  content: $content;
+  display: block;
+  font-size: 18px;
+  color: $colorRed;
+  font-weight: bold;
 }
 
 @mixin btn {

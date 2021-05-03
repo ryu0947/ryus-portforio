@@ -1,6 +1,8 @@
-@import "module/";
-@import "mixin/";
-@import "base/";
+@import "reset";
+@import "variable";
+@import "breakpoints";
+@import "container";
+@import "mixin";
 
 .container {
   @include container();
