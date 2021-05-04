@@ -5,7 +5,7 @@
           <h2 class="section-title about__title" lang="en">About</h2>
           <div class="profile">
             <img
-              src="img/profile.png"
+              src="<?php echo get_template_directory_uri(); ?>/img/profile.png"
               width="420"
               height="420"
               alt="小川竜司の写真"
@@ -107,7 +107,7 @@
             <li class="work__item">
               <div class="work__img">
                 <img
-                  src="img/numbers-game.png"
+                  src="<?php echo get_template_directory_uri(); ?>/img/numbers-game.png"
                   width="426"
                   height="224"
                   alt="ボタンに表示された数字を1から順番に押していきその速さを競う「Numbers Game」です。"
@@ -117,7 +117,7 @@
             </li>
             <li class="work__item">
               <img
-                src="img/thread.png"
+                src="<?php echo get_template_directory_uri(); ?>/img/thread.png"
                 width="426"
                 height="224"
                 alt="架空の企業・株式会社 threadのコーポレートサイトです。"
@@ -126,7 +126,7 @@
             </li>
             <li class="work__item">
               <img
-                src="img/js-work.png"
+                src="<?php echo get_template_directory_uri(); ?>/img/js-work.png"
                 width="426"
                 height="224"
                 alt="Webサイトによくある機能・ドロワーメニュー・スムーススクロール・スライダー・タブメニュー・モーダル・アコーディオンメニュー・TOPへ戻るボタン・ローディングアニメーションをjQueryではなくJavaScriptで作りました。"
@@ -135,7 +135,7 @@
             </li>
             <li class="work__item">
               <img
-                src="img/timer.png"
+                src="<?php echo get_template_directory_uri(); ?>/img/timer.png"
                 width="426"
                 height="224"
                 alt="25分間の作業と5分間の休憩を1セットとして繰り返し行うポモドーロテクニックを測ることが出来るタイマーです。"
@@ -144,7 +144,7 @@
             </li>
             <li class="work__item">
               <img
-                src="img/tweet.png"
+                src="<?php echo get_template_directory_uri(); ?>/img/tweet.png"
                 width="426"
                 height="224"
                 alt="毎日行っている学習の内容を書いたツイートをTwitterのモーメント機能を使ってまとめました。"
@@ -153,7 +153,7 @@
             </li>
             <li class="work__item">
               <img
-                src="img/portfolio.png"
+                src="<?php echo get_template_directory_uri(); ?>/img/portfolio.png"
                 width="426"
                 height="224"
                 alt="小川竜司のポートフォリオサイトです。"
@@ -168,7 +168,7 @@
           <h2 class="section-title blog__title" lang="en">Blog</h2>
           <img
             class="blog__img"
-            src="img/blog.png"
+            src="<?php echo get_template_directory_uri(); ?>/img/blog.png"
             width="900"
             height="600"
             alt="ブログのスクリーンショット"

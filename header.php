@@ -7,7 +7,7 @@
     <meta name="description" content="<?php bloginfo('description') ?>" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/fontawsome.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/all.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/apple-touch-icon.png" />
@@ -17,7 +17,7 @@
 
 <body>
     <div id="js-fv" class="fv">
-        <h1 class="fv__logo"><img src="img/logo.png" alt="Ryu's Portfolio" /></h1>
+        <h1 class="fv__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Ryu's Portfolio" /></h1>
     </div>
     <header id="js-header" class="header">
         <nav class="nav">
