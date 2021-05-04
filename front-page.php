@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="小川竜司のポートフォリオサイトです。2020年の7月の学習開始から今日に至るまでに勉強したこと・作った作品・書いたブログをまとめています。"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/fontawsome.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/apple-touch-icon.png"
-    />
-    <script src="js/page-link.js" defer></script>
-    <title>Ryu's Portfolio</title>
-  </head>
-  <body>
-    <div id="js-fv" class="fv">
-      <h1 class="fv__logo"><img src="img/logo.png" alt="Ryu's Portfolio" /></h1>
-    </div>
-    <header id="js-header" class="header">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item" lang="en"><a href="#about">About</a></li>
-          <li class="nav__item" lang="en"><a href="#skill">Skill</a></li>
-          <li class="nav__item" lang="en"><a href="#work">Work</a></li>
-          <li class="nav__item" lang="en"><a href="#blog">Blog</a></li>
-        </ul>
-      </nav>
-    </header>
+<?php get_header(); ?>
     <main id="js-main">
       <section id="about" class="about">
         <div class="container">
@@ -225,24 +190,4 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__links">
-        <a
-          href="https://twitter.com/ryu0947"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-2x fa-twitter"></i>
-        </a>
-        <a
-          href="https://github.com/ryu0947"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-2x fa-github"></i>
-        </a>
-      </div>
-      <small class="small">&copy;Ryu's Portfolio</small>
-    </footer>
-  </body>
-</html>
+<?php get_footer(); ?>
