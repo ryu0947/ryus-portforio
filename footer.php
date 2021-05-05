@@ -7,7 +7,7 @@
             <i class="fab fa-2x fa-github"></i>
         </a>
     </div>
-    <small class="small">&copy;Ryu's Portfolio</small>
+    <small class="small">&copy;<?php bloginfo('name'); ?></small>
 </footer>
 <?php wp_footer(); ?>
 </body>
