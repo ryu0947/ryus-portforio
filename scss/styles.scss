@@ -1,0 +1,294 @@
+@import "variable";
+@import "mixin";
+@import "breakpoints";
+@import "container";
+
+.container {
+  @include container();
+}
+
+.section-title {
+  &.about__title::after {
+    @include subTitle("自己紹介");
+  }
+
+  &.skill__title::after {
+    @include subTitle("スキル");
+  }
+
+  &.work__title::after {
+    @include subTitle("作品");
+  }
+
+  &.blog__title::after {
+    @include subTitle("ブログ");
+  }
+}
+
+.fv {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/main-visual.jpg) no-repeat center/cover;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: $colorBlue;
+}
+
+.nav {
+  padding: 0 5vw;
+
+  @include breakPoint($md) {
+    width: 600px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__list {
+    color: #ffffff;
+    @include flexBox();
+  }
+
+  &__item {
+    font-weight: bold;
+
+    & a {
+      position: relative;
+      color: #ffffff;
+      font-weight: bold;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        height: 3px;
+        background: #ffffff;
+        transform: scale(0, 1);
+        transform-origin: center top;
+        transition: transform 0.3s;
+      }
+
+      &:hover::after {
+        content: "";
+        transform: scale(1, 1);
+      }
+    }
+  }
+}
+
+.profile {
+  @include breakPoint($lg) {
+    @include flexBox();
+  }
+
+  &__img {
+    width: 80%;
+    @include breakPoint($md) {
+      width: 40%;
+    }
+
+    @include breakPoint($lg) {
+      width: 35%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    margin: 50px 0;
+
+    @include breakPoint($md) {
+      width: 80%;
+      margin: 50px auto;
+    }
+
+    @include breakPoint($lg) {
+      width: 60%;
+    }
+
+    @include breakPoint($xl) {
+      width: 50%;
+    }
+
+    & dt {
+      flex-basis: 37%;
+
+      @include breakPoint($md) {
+        flex-basis: 25%;
+      }
+
+      &::before {
+        content: "・";
+      }
+
+      &::after {
+        content: ":";
+      }
+    }
+
+    & dd {
+      flex-basis: 63%;
+
+      @include breakPoint($md) {
+        flex-basis: 75%;
+      }
+    }
+  }
+
+  &__item {
+    font-weight: 500;
+    margin-bottom: 1em;
+
+    & em::before {
+      content: '"';
+    }
+
+    & em::after {
+      content: '"';
+    }
+  }
+}
+
+.skill {
+  background-color: $colorOffWhite;
+
+  &__list {
+    @include flexBox($flexWrap);
+    margin: 60px 0 -60px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 25%;
+      order: 1;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 25%;
+    }
+  }
+
+  &__item {
+    width: 50%;
+    margin-bottom: 50px;
+
+    @include breakPoint($md) {
+      width: 25%;
+    }
+  }
+}
+
+.work {
+  &__list {
+    @include breakPoint($lg) {
+      @include flexBox($flexWrap);
+    }
+    margin: 60px 0 -60px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30%;
+      order: 1;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 30%;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    margin-bottom: 60px;
+
+    @include breakPoint($lg) {
+      width: 45%;
+    }
+
+    @include breakPoint($xl) {
+      width: 30%;
+    }
+
+    & img {
+      transition: box-shadow 0.5s, transform 0.5s;
+    }
+
+    & img:hover {
+      transform: translateY(-4px);
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    margin-top: 0.5em;
+    font-weight: bold;
+  }
+}
+
+.blog {
+  background-color: $colorOffWhite;
+
+  &-link {
+    color: $colorRed;
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.6;
+      text-decoration: none;
+    }
+  }
+
+  &__img {
+    @include breakPoint($md) {
+      width: 90%;
+    }
+
+    @include breakPoint($xl) {
+      width: 70%;
+    }
+  }
+
+  &__description {
+    margin: 2em 0;
+    text-align: justify;
+
+    @include breakPoint($md) {
+      width: 80%;
+      margin: 2em auto 0;
+    }
+
+    @include breakPoint($xl) {
+      width: 60%;
+    }
+  }
+}

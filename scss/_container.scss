@@ -1,0 +1,23 @@
+@import "mixin";
+
+@mixin container {
+  padding: 0 15px;
+  text-align: center;
+
+  // タブレット
+  @include breakPoint($md) {
+    max-width: $md;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  // タブレット大・ノートPC
+  @include breakPoint($lg) {
+    max-width: $lg;
+  }
+
+  // モニター
+  @include breakPoint($xl) {
+    max-width: $xl;
+  }
+}

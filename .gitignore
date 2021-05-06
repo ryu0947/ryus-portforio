@@ -1,0 +1,16 @@
+conf/
+logs/
+app/*
+
+# テーマファイルのみ読み込む
+!app/public
+app/public/*
+!app/public/wp-content/
+app/public/wp-content/*
+!app/public/wp-content/themes/
+app/public/wp-content/themes/*
+!app/public/wp-content/themes/ryus-portfolio/
+
+node_modules/
+css/
+webfonts/
