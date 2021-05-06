@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="これまでに制作した作品の詳細ページです。"
+      content="作品・「株式会社Thread コーポレートサイト」の概要・理由・こだわったところをまとめました。"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fontawsome.css" />
@@ -17,7 +17,7 @@
       sizes="180x180"
       href="img/apple-touch-icon.png"
     />
-    <title>作品詳細 | Numbers Game</title>
+    <title>作品詳細 | 株式会社Thread コーポレートサイト</title>
   </head>
   <body>
     <header id="js-header" class="header">
@@ -40,7 +40,9 @@
     </header>
     <section>
       <div class="container">
-        <h2 class="section-title" lang="en">Numbers Game</h2>
+        <h2 class="section-title" lang="en">
+          株式会社Thread コーポレートサイト
+        </h2>
         <video
           class="work-movie"
           src="movie/numbers-game.mp4"
@@ -49,70 +51,57 @@
           muted
         ></video>
         <div class="work-caption">
-          <p class="work-language" lang="en">HTML/CSS/JavaScript</p>
+          <p class="work-language" lang="en">HTML/SCSS/jQuery</p>
           <div class="work-link">
             <a
-              href="https://ryu0947.github.io/numbers-game/"
+              href="https://ryu0947.github.io/thread/"
               target="_blank"
               rel="noopener noreferrer"
-              >ゲームをプレイする<i class="fas fa-external-link-alt"></i
+              >サイトを見る<i class="fas fa-external-link-alt"></i
             ></a>
           </div>
         </div>
         <div class="work-contents">
           <h3 class="work-title">概要</h3>
           <p>
-            ボタンに表示された数字を1から順番に押していきその速さを競う<strong
-              >「Numbers Game」をHTML/CSS/JavaScript</strong
-            >で作りました。
-            実装した機能は、難易度の選択/難易度に応じて表示されるパネルの増減と画面デザインの変更/タイマー機能/クリアタイムに応じた
-            レビュー機能の4つです。PCはもちろんスマホでもプレイ可能です。実際にプレイした感想やクリアタイムをいただけるととても嬉しいです。
+            架空の企業(制作会社)のコーポレートサイトを制作しました。模写では無く、<strong>全てオリジナルのデザイン</strong>です。
+            スティッキーヘッダー・スクロールアニメーション・ドロワーメニュー・TOPへ戻るボタンなどWebサイトに
+            よくある機能を一通り実装し、レスポンシブ対応もしております。
           </p>
         </div>
         <div class="work-contents">
           <h3 class="work-title">制作した理由</h3>
           <p>
-            ある程度の期間JavaScriptの学習をして何か作品を作ろうと思った時、真っ先に思い浮かんだのが<strong>「ゲームを作りたい」</strong>でした。
-            「スマホとPCの両方で遊べるゲームって何だ？」と色々探していたらたまたまバナー広告でNumbersGameが表示されていて実際にプレイしてみると、ルールはシンプルながらもより早いタイムを出すために何度もプレイ出来る楽しさを感じたので
-            Numbers Gameを作りました。
+            サイト模写のようにすでに存在するサイトを真似してコーディングするのでは無く、<strong>「自分がデザインしたWebページをコーディングしてみたい」</strong>と思ったからです。
+            デザイン面は苦戦しましたが、色々なサイトを見て自分的に好きなデザイン・気に入ったデザインを取り入れると共に<strong
+              >ただの情報の羅列にならないように余白や配置や文章に
+              気をつけました。</strong
+            >
           </p>
         </div>
         <div class="work-contents">
           <h3 class="work-title">こだわったところ</h3>
           <p>
-            こだわったところは<strong>操作のしやすさと機能拡張のしやすさ</strong>の2点です。
-            操作の面では、<strong>数字が表示されるボタンに影をつけて「押せるボタン」</strong>に見えるようにして<strong
-              >クリックしたボタンは影を消して灰色にして
-              「使用済みのボタン」</strong
-            >に見えるように工夫しました。
-            機能の面では、後に機能の拡張がしやすいように<strong>数字が表示されるボタンを動的に出力するのとクラス構文</strong>を使いました。
-            最初こそHTMLで物理的にタグを増やして処理も全て関数で行いましたが、コードの見通しが悪く更新がしづらいと感じたので
-            <strong
-              >クラス構文に書き換えて処理の内容を「数字が表示されるボタンを管理するクラス」「ボタンの状態を管理するクラス」
-              「ゲーム全体の処理を管理するクラス」</strong
-            >の3つに分けました。引き続きコードのリファクタリングを進めていくとともに
-            今後はゲームの結果をSNSに共有できる機能の実装を予定しております。
+            BEMを使ってクラス名に規則を持たせるのとSassを使ってよく使うスタイルをコンポーネント化・スタイルの用途ごとにファイルを切り出してまとめました。
+            HTMLもクリックされる要素はbuttonかaタグにして日付はtimeタグ、住所などの情報をadressタグでマークアップするなど<strong>アクセシビリティを意識したマークアップ</strong>をしました。
+            今後は別ページも制作してサイトをWordPressで運営できるようにしていく予定です。
           </p>
         </div>
         <div class="work-link">
           <a
-            href="https://github.com/ryu0947/numbers-game"
+            href="https://github.com/ryu0947/thread"
             target="_blank"
             rel="noopener noreferrer"
-            >GitHubのコードを見る<img src="img/new-window.png" alt="" /><i
-              class="fas fa-external-link-alt"
-            ></i
+            >GitHubのコードを見る<i class="fas fa-external-link-alt"></i
           ></a>
         </div>
         <div class="work-link">
           <a
             class="work-link"
-            href="https://ryu0947.github.io/numbers-game/"
+            href="https://ryu0947.github.io/thread/"
             target="_blank"
             rel="noopener noreferrer"
-            >ゲームをプレイする<img src="img/new-window.png" alt="" /><i
-              class="fas fa-external-link-alt"
-            ></i
+            >サイトを見る<i class="fas fa-external-link-alt"></i
           ></a>
         </div>
         <a class="btn red" href="index.html">前のページへ戻る</a>
