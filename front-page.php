@@ -3,6 +3,10 @@
   <section id="about" class="about">
     <div class="container">
       <h2 class="section-title about__title" lang="en">About</h2>
+      <p class="intro">
+        はじめまして！小川竜司と申します。<br />
+        私の経歴と簡単な自己紹介をいたします。
+      </p>
       <div class="profile">
         <img src="<?php echo get_template_directory_uri(); ?>/img/profile.png" width="420" height="420" alt="小川竜司の写真" class="profile__img" />
         <dl class="profile__list">
