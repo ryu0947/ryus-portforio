@@ -24,9 +24,11 @@
 </head>
 
 <body>
-    <div id="js-fv" class="fv">
-        <h1 class="fv__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Ryu's Portfolio" /></h1>
-    </div>
+    <?php if (is_front_page()) : ?>
+        <div id="js-fv" class="fv">
+            <h1 class="fv__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Ryu's Portfolio" /></h1>
+        </div>
+    <?php endif; ?>
     <header id="js-header" class="header">
         <nav class="nav">
             <?php if (is_front_page()) : ?>
