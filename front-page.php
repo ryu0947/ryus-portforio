@@ -28,14 +28,14 @@
           </dd>
           <dt class="profile__item">ブログ</dt>
           <dd class="profile__item">
-            学習用ブログ<a href="<?php esc_url('https://ryu-webstudy.com/') ?>" target="_blank" rel="noopener noreferrer" class="blog-link">「リュウブログ」</a>を運営
+            学習用ブログ<a href="<?php echo esc_url('https://ryu-webstudy.com/') ?>" target="_blank" rel="noopener noreferrer" class="blog-link">「リュウブログ」</a>を運営
           </dd>
           <dt class="profile__item" lang="en">Links</dt>
           <dd class="profile__item">
-            <a href="<?php esc_url('https://twitter.com/ryu0947'); ?> " target="_blank" rel="noopener noreferrer">
+            <a href="<?php echo esc_url('https://twitter.com/ryu0947'); ?> " target="_blank" rel="noopener noreferrer">
               <i class="fab fa-2x fa-twitter"></i>
             </a>
-            <a href="<?php esc_url('https://github.com/ryu0947'); ?>" target="_blank" rel="noopener noreferrer">
+            <a href="<?php echo esc_url('https://github.com/ryu0947'); ?>" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-2x fa-github"></i>
             </a>
           </dd>
@@ -110,7 +110,7 @@
         することを意識しています。書いた記事はその都度Twitterにアップしてたくさんの人に読んでもらえるよ
         うにするのと、見出しにキーワードを入れたりaltタグに適切な説明を入れてSEOも意識しています。
       </p>
-      <a class="btn red" href="<?php esc_url('https://ryu-webstudy.com/') ?>" target="_blank" rel="noopener noreferrer">ブログを見る<i class="fas fa-external-link-alt"></i></a>
+      <a class="btn red" href="<?php echo esc_url('https://ryu-webstudy.com/') ?>" target="_blank" rel="noopener noreferrer">ブログを見る<i class="fas fa-external-link-alt"></i></a>
     </div>
   </section>
 </main>
