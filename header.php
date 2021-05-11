@@ -10,7 +10,7 @@
     <meta property="og:title" content="Ryu's Portfolio" />
     <meta property="og:description" content="小川竜司のポートフォリオサイトです。2020年の7月の学習開始から今日に至るまでに勉強したこと・作った作品・書いたブログをまとめています。" />
     <meta property="og:site_name" content="Ryu's Portfolio" />
-    <meta property="og:image" content="https://ryus-portfolio.com/img/work/portfolio.png" />
+    <meta property="og:image" content="https://ryus-portfolio.com/img/ogp.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ryu0947" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />
