@@ -7,7 +7,7 @@
       <p class="work-language" lang="en"><?php the_field('work_lang'); ?></p>
       <?php if (get_field('page_url')) : ?>
         <div class="work-link">
-          <a href="<?php the_field('page_url'); ?>" target="_blank" rel="noopener noreferrer">作品サイトを見る<i class="fas fa-external-link-alt"></i></a>
+          <a href="<?php esc_url(the_field('page_url')); ?>" target="_blank" rel="noopener noreferrer">作品サイトを見る<i class="fas fa-external-link-alt"></i></a>
         </div>
       <?php endif; ?>
     </div>
@@ -42,15 +42,15 @@
     </div>
     <?php if (get_field('page_url')) : ?>
       <div class="work-link">
-        <a href="<?php the_field('page_url'); ?>" target="_blank" rel="noopener noreferrer">作品サイトを見る<i class="fas fa-external-link-alt"></i></a>
+        <a href="<?php esc_url(the_field('page_url')); ?>" target="_blank" rel="noopener noreferrer">作品サイトを見る<i class="fas fa-external-link-alt"></i></a>
       </div>
     <?php endif; ?>
     <?php if (get_field('github_url')) : ?>
-        <div class="work-link">
-          <a href="<?php the_field('github_url'); ?>" target="_blank" rel="noopener noreferrer">GitHubのコードを見る<i class="fas fa-external-link-alt"></i></a>
-        </div>
-      <?php endif; ?>
-    <a class="btn red" href="index.html">前のページへ戻る</a>
+      <div class="work-link">
+        <a href="<?php esc_url(the_field('github_url')); ?>" target="_blank" rel="noopener noreferrer">GitHubのコードを見る<i class="fas fa-external-link-alt"></i></a>
+      </div>
+    <?php endif; ?>
+    <a class="btn red" href="<?php echo esc_url(home_url()); ?>">前のページへ戻る</a>
   </div>
 </section>
 <?php get_footer(); ?>
