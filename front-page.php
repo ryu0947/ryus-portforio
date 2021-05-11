@@ -28,14 +28,14 @@
           </dd>
           <dt class="profile__item">ブログ</dt>
           <dd class="profile__item">
-            学習用ブログ<a href="https://ryu-webstudy.com/" target="_blank" rel="noopener noreferrer" class="blog-link">「リュウブログ」</a>を運営
+            学習用ブログ<a href="<?php esc_url('https://ryu-webstudy.com/') ?>" target="_blank" rel="noopener noreferrer" class="blog-link">「リュウブログ」</a>を運営
           </dd>
           <dt class="profile__item" lang="en">Links</dt>
           <dd class="profile__item">
-            <a href="https://twitter.com/ryu0947" target="_blank" rel="noopener noreferrer">
+            <a href="<?php esc_url('https://twitter.com/ryu0947'); ?> " target="_blank" rel="noopener noreferrer">
               <i class="fab fa-2x fa-twitter"></i>
             </a>
-            <a href="https://github.com/ryu0947" target="_blank" rel="noopener noreferrer">
+            <a href="<?php esc_url('https://github.com/ryu0947'); ?>" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-2x fa-github"></i>
             </a>
           </dd>
@@ -78,32 +78,24 @@
         画像をクリックすると作品の詳細をご覧いただけます。
       </p>
       <ul class="work__list">
-        <li class="work__item">
-          <div class="work__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/numbers-game.png" width="426" height="224" alt="ボタンに表示された数字を1から順番に押していきその速さを競う「Numbers Game」です。" />
-          </div>
-          <p class="work__name" lang="en">Numbers Game</p>
-        </li>
-        <li class="work__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/thread.png" width="426" height="224" alt="架空の企業・株式会社 threadのコーポレートサイトです。" />
-          <p class="work__name">架空の企業のコーポレートサイト</p>
-        </li>
-        <li class="work__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/js-work.png" width="426" height="224" alt="Webサイトによくある機能・ドロワーメニュー・スムーススクロール・スライダー・タブメニュー・モーダル・アコーディオンメニュー・TOPへ戻るボタン・ローディングアニメーションをjQueryではなくJavaScriptで作りました。" />
-          <p class="work__name">JavaScript作品集</p>
-        </li>
-        <li class="work__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/timer.png" width="426" height="224" alt="25分間の作業と5分間の休憩を1セットとして繰り返し行うポモドーロテクニックを測ることが出来るタイマーです。" />
-          <p class="work__name">ポモドーロタイマー</p>
-        </li>
-        <li class="work__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/tweet.png" width="426" height="224" alt="毎日行っている学習の内容を書いたツイートをTwitterのモーメント機能を使ってまとめました。" />
-          <p class="work__name">積み上げツイートまとめ</p>
-        </li>
-        <li class="work__item">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio.png" width="426" height="224" alt="小川竜司のポートフォリオサイトです。" />
-          <p class="work__name">ポートフォリオサイト</p>
-        </li>
+        <?php
+        $args = array(
+          'post_type' => 'works',
+          'order' => 'ASC',
+          'get_per_page' => -1
+        );
+        $my_query = new WP_Query($args);
+        if ($my_query->have_posts()) :
+          while ($my_query->have_posts()) : $my_query->the_post();
+        ?>
+            <li class="work__item">
+              <a href="<?php the_permalink(); ?>">
+                <div class="work__img"><?php the_post_thumbnail(); ?></div>
+                <p class="work__name" lang="en"><?php the_title(); ?></p>
+              </a>
+            </li>
+          <?php endwhile; ?>
+        <?php endif; ?>
       </ul>
     </div>
   </section>
@@ -118,7 +110,7 @@
         することを意識しています。書いた記事はその都度Twitterにアップしてたくさんの人に読んでもらえるよ
         うにするのと、見出しにキーワードを入れたりaltタグに適切な説明を入れてSEOも意識しています。
       </p>
-      <a class="btn red" href="https://ryu-webstudy.com/" target="_blank" rel="noopener noreferrer">ブログを見る<i class="fas fa-external-link-alt"></i></a>
+      <a class="btn red" href="<?php esc_url('https://ryu-webstudy.com/') ?>" target="_blank" rel="noopener noreferrer">ブログを見る<i class="fas fa-external-link-alt"></i></a>
     </div>
   </section>
 </main>
