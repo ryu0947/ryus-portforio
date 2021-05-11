@@ -22,3 +22,6 @@ remove_filter('the_excerpt', 'wpautop');
 
 // アイキャッチ画像を有効にする。
 add_theme_support('post-thumbnails');
+
+// カスタムメニューを有効化
+add_theme_support('menus');
