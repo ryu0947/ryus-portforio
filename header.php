@@ -41,16 +41,16 @@
             <?php else : ?>
                 <ul class="nav__list">
                     <li class="nav__item" lang="en">
-                        <a href="index.html#about">About</a>
+                        <a href="<?php echo esc_url(home_url('#about')) ?>">About</a>
                     </li>
                     <li class="nav__item" lang="en">
-                        <a href="index.html#skill">Skill</a>
+                        <a href="<?php echo esc_url(home_url('#skill')) ?>">Skill</a>
                     </li>
                     <li class="nav__item" lang="en">
-                        <a href="index.html#work">Work</a>
+                        <a href="<?php echo esc_url(home_url('#work')) ?>">Work</a>
                     </li>
                     <li class="nav__item" lang="en">
-                        <a href="index.html#blog">Blog</a>
+                        <a href="<?php echo esc_url(home_url('#blog')) ?>">Blog</a>
                     </li>
                 </ul>
             <?php endif; ?>
