@@ -2,7 +2,11 @@
 <section>
   <div class="container">
     <h2 class="section-title" lang="en"><?php echo the_title(); ?></h2>
-    <video class="work-movie" src="<?php the_field('work_movie'); ?>" controls preload="auto" muted></video>
+    <?php if (get_field('work_movie')) : ?>
+      <video class="work-movie" src="<?php the_field('work_movie'); ?>" controls preload="auto" muted></video>
+    <?php elseif (get_field('work_img')) : ?>
+      <img src="<?php the_field('work_img') ?>" width="1200" height="700" alt="">
+    <?php endif; ?>
     <div class="work-caption">
       <p class="work-language" lang="en"><?php the_field('work_lang'); ?></p>
       <?php if (get_field('page_url')) : ?>
