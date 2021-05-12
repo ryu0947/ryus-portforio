@@ -10,7 +10,7 @@
     <meta property="og:title" content="Ryu's Portfolio" />
     <meta property="og:description" content="小川竜司のポートフォリオサイトです。2020年の7月の学習開始から今日に至るまでに勉強したこと・作った作品・書いたブログをまとめています。" />
     <meta property="og:site_name" content="Ryu's Portfolio" />
-    <meta property="og:image" content="https://ryus-portfolio.com/img/work/portfolio.png" />
+    <meta property="og:image" content="https://ryus-portfolio.com/img/ogp.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ryu0947" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />
@@ -24,9 +24,11 @@
 </head>
 
 <body>
-    <div id="js-fv" class="fv">
-        <h1 class="fv__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Ryu's Portfolio" /></h1>
-    </div>
+    <?php if (is_front_page()) : ?>
+        <div id="js-fv" class="fv">
+            <h1 class="fv__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Ryu's Portfolio" /></h1>
+        </div>
+    <?php endif; ?>
     <header id="js-header" class="header">
         <nav class="nav">
             <?php if (is_front_page()) : ?>
@@ -39,16 +41,16 @@
             <?php else : ?>
                 <ul class="nav__list">
                     <li class="nav__item" lang="en">
-                        <a href="index.html#about">About</a>
+                        <a href="<?php echo esc_url(home_url('#about')) ?>">About</a>
                     </li>
                     <li class="nav__item" lang="en">
-                        <a href="index.html#skill">Skill</a>
+                        <a href="<?php echo esc_url(home_url('#skill')) ?>">Skill</a>
                     </li>
                     <li class="nav__item" lang="en">
-                        <a href="index.html#work">Work</a>
+                        <a href="<?php echo esc_url(home_url('#work')) ?>">Work</a>
                     </li>
                     <li class="nav__item" lang="en">
-                        <a href="index.html#blog">Blog</a>
+                        <a href="<?php echo esc_url(home_url('#blog')) ?>">Blog</a>
                     </li>
                 </ul>
             <?php endif; ?>

@@ -101,6 +101,7 @@
 }
 
 .profile {
+  margin-top: 48px;
   @include breakPoint($lg) {
     @include flexBox();
   }
